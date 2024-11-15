@@ -1,0 +1,353 @@
+@font-face {
+    font-family: Nunito;
+    src: url('../../fonts/NunitoSans_7pt_Condensed-Regular.ttf');
+    font-family: americas;
+    src: url("../../fonts/AmericanLabelDEMO.ttf")
+}
+:root{
+    --naranja: #f0a202ff;
+    --naranjaClaro: #f8d181ff;
+    --blanco: #ffffffff;
+    --rojoCoral: #da8e8eff;
+    --rojoOscuro: #b51d1dff;
+    --rojoClaro: #ce3e3dff;
+    --rojoMasClaro: #e65f5cff;
+
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+.header__logo{
+    width: 5rem;
+    height: 5rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--naranjaClaro);
+}
+.header__navegacion{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--rojoCoral);
+}
+.header__link{
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover{
+    text-decoration: underline;
+    color: var(--naranja);
+    font-size:20px;
+}
+@media screen and (max-width:768px){
+
+    .header__navegacion{
+        flex-direction: column;
+    }
+        
+}   
+
+    /* Aquí termina la seccion header */
+
+.seccionhero{
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../imagenes/skyplane.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: end;
+    justify-content: center;
+    align-items: center;
+}
+.seccionHero__titulo{
+    color: white;
+    margin: 0;
+    text-align: center;
+
+    
+}
+@media screen and (max-width:700px){
+.seccionHero__form{
+    background-color: rgba(255, 255, 255, 0.234);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+}  
+    .seccionHero__form{
+    padding: 0.3rem 1rem;
+}
+
+            
+   
+
+.seccionHero__boton{
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--naranja);
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+
+}
+.seccionHero__inputForm{
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+}
+.seccionHero__boton:hover{
+    background-color: var(--naranjaClaro);
+}
+.seccionHero__dateForm{
+    padding: 0.1rem 0.1rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+.seccionHeo__inputSubmit{
+    font-size: 1.1rem;
+    background-color: var(--naranja);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+
+    /* Aquí termina la seccion form */
+}
+.seccionDonde__imagenCard{
+    width: 100%;
+    height: 20rem;
+    filter: brightness(0.4);
+}
+.seccionDonde__imagenCard:hover{
+    filter: brightness(1);
+    cursor: pointer;
+
+}
+
+.seccionDonde__card{
+    width: 20%;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 255, 255, 0.237);
+
+} 
+.seccionDonde__contenedorCards{
+    display: flex;
+    
+}  
+
+@media screen and (max-width: 992px){
+
+
+.seccionDonde__contenedorCards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionDonde__card{
+    width: 100%;
+
+}
+}
+.seccionDonde__titulo{
+    text-align: center;
+    padding: 0;
+}
+.seccionDonde__tituloCard{
+    margin: 0.1;
+    text-align: center;
+    font-family: Nunito;
+}
+.seccionAlquiler__imagenCard{
+    width: 60%;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 255, 255, 0.237);
+
+}
+.SeccionContenedorAlquiler__card{
+    display: flex;
+    justify-content: center;
+
+}
+.seccionAlquiler__imagenCard_y{
+    width: 100%;
+    padding: 0.9rem 1rem;
+}
+.SeccionAlquiler__img{
+    width: 40%;
+    height: 20rem;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.853);
+}
+.seccionAlquiler__seccionCards{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.seccionAlquiler__tituloCseccion{
+    text-align: center;
+}
+.seccionAlquiler_titulo{
+    text-align: center;
+    font-family: Nunito;
+}
+@media screen(max-width 778px ) {
+
+.SeccionContenedorAlquiler__card{
+    flex-direction: column;
+    align-items: center;
+}
+/* arreglar */
+.SeccionAlquiler__img{
+    width: 70%;
+}
+
+}
+
+
+.SeccionAlquilerHotel__img{
+    width: 40%;
+    height: 20rem;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.853);
+    
+}
+.SeccionAlquilerHotel__img:hover{
+    cursor: pointer;
+}
+.SeccionAlquiler__img:hover{
+    cursor: pointer;
+}
+.seccionAlquiler{
+    display: grid;
+}
+.CardOferta__img{
+    width: 60%;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.cardOferta{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../imagenes/avion4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    margin: 1rem 0rem 0rem;
+    text-align: center;
+    font-family: Nunito;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.cardOferta__card{
+    width: 70%;
+    margin: 1rem;
+    display: flex;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.248);
+    border-radius: 1.3rem;
+    padding: 0.5rem 0.5rem;
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../imagenes/05.jpg)); */
+   
+}
+.CardOferta__contenedorTexto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardOferta__precio{
+    color: red;
+    text-decoration: underline;
+}
+.cardOferta__precio--antes{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+.cardOferta__precio--despues{
+    font-size: 1.3rem;
+}
+.cardOferta__botonComprar{
+    width: 30%;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--rojoClaro);
+    color: white;
+    display: flex;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    
+}
+.cardOferta__botonComprar:hover{
+    background-color: var(--rojoMasClaro);
+}
+
+ 
+    
+
+.cardOferta__titulo{
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    .cardOferta{
+        height: auto;
+    }
+    .cardOferta__card{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    .CardOferta__img{
+        width: 80%;
+        height: auto;
+    }
+    }}
+
+.footer{
+    background-color: var(--naranjaClaro);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: Nunito;
+}
+.footer__rrss{
+    list-style-type: none;
+    display: flex;
+
+
+}
+.footer__elementoRRSS{
+    text-decoration: none;
+    color: black;
+    margin: 0 0.3rem;
+}
+.footer_listaLinks{
+    list-style-type: none;
+}
+@media screen and (max-width: 778px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__rrss{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+/* PRUEBA BORRAR */
+
+
